@@ -1,22 +1,26 @@
 #Basic calulator
 
 def Cal(a, b,c):
-    if b == "m":
+    if b == "*":
         return a*c
+    if b == "+":
+        return a+c
+    if b == "-":
+        return a-c
+    if b == "/":
+        return a/c
 
 
-print('Please enter a number')
+print()
 
-a =  input(int)
+a =  int(input('Please enter a number'))
 
-print('Please enter a number')
+print()
 
-c = input(int)
+c = int(input('Please enter a number'))
 
 print("*,+,-,/")
 
 b = input()
-
-
 
 print(Cal(a,b,c))
