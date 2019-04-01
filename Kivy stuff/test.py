@@ -6,8 +6,13 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.uix.textinput import TextInput  
 from kivy.uix.widget import Widget 
 
-class MyGrid(Button):
-    pass
+class MyGrid(GridLayout):
+    def Compute(self,Equate):
+        if Equate:
+            try:
+                self.display.text = str(eval(Equate))
+            except:
+                self.display.text = "Error X.X"
         
 
 
